@@ -6,11 +6,11 @@ A lightweight lock service for distributed systems inside PostgreSQL.
 
 ```sql
 -- Acquire a lock
-SELECT pglock.lock('worker-1', 'resource-a');
+SELECT pglock.lock('b3d8a762-3a0e-495b-b6a1-dc8609839f7b', 'users');
 -- Returns true if lock acquired, false if already locked
 
 -- Release the lock
-SELECT pglock.unlock('worker-1', 'resource-a');
+SELECT pglock.unlock('b3d8a762-3a0e-495b-b6a1-dc8609839f7b', 'users');
 -- Returns true
 
 -- Set database to serializable isolation (recommended)
