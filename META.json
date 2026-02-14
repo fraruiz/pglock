@@ -1,0 +1,25 @@
+{
+   "name": "pglock",
+   "abstract": "A lightweight lock service for distributive systems inside PostgreSQL",
+   "version": "1.0.0",
+   "maintainer": "Francisco Ruiz franciscoruizlezcano@gmail.com",
+   "license": "postgresql",
+   "provides": {
+      "pglock": {
+         "file": "pglock--1.0.0.sql",
+         "version": "1.0.0"
+      }
+   },
+   "resources": {
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/fraruiz/pglock.git",
+        "web": "https://github.com/fraruiz/pglock"
+      }
+   },
+   "generated_by": "Francisco Ruiz",
+   "meta-spec": {
+      "version": "1.0.0",
+      "url": "http://pgxn.org/meta/spec.txt"
+   }
+}
