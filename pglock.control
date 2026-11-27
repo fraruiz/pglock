@@ -1,6 +1,5 @@
 comment = 'A simple PostgreSQL lock service for distributive systems'
 default_version = '1.0.0'
-module_pathname = '$libdir/pglock'
 relocatable = false
 schema = 'pglock'
 requires = 'pg_cron'

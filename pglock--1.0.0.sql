@@ -1,14 +1,6 @@
 ------------------------------------------------------------
 -- Schema, tables, records, privileges, indexes, etc
 ------------------------------------------------------------
--- When installed as an extension, we don't need to create the `pglock` schema
--- because it is automatically created by postgres due to being declared in
--- the extension control fi
-
-CREATE EXTENSION IF NOT EXISTS pg_cron;
-
-CREATE SCHEMA IF NOT EXISTS pglock;
-
 CREATE TABLE IF NOT EXISTS pglock.services (
     "id"             uuid NOT NULL default gen_random_uuid(),
     "name"           varchar NOT NULL,
